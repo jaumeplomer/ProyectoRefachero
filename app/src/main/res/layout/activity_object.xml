@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E24"
+    tools:context=".EquipamentActivity">
+
+    <TextView
+        android:id="@+id/NomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:text="Nom objecte"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ArmaduraTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Punts Armadura"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NomTextView" />
+
+    <TextView
+        android:id="@+id/AtacTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:text="Punts atac"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ArmaduraTextView" />
+
+    <TextView
+        android:id="@+id/VidaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Punts vida"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AtacTextView" />
+
+    <TextView
+        android:id="@+id/VelocitatTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="24dp"
+        android:text="Punts Velocitat"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VidaTextView" />
+
+    <TextView
+        android:id="@+id/PreuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="Preu"
+        android:textSize="25dp"
+        app:layout_constraintStart_toEndOf="@+id/VelocitatTextView"
+        app:layout_constraintTop_toBottomOf="@+id/VelocitatTextView" />
+
+    <ImageView
+        android:id="@+id/Imatge"
+        android:layout_width="206dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PreuTextView"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/BotoAfegir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:text="Afegeix"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.801"
+        app:layout_constraintStart_toEndOf="@+id/ArmaduraTextView"
+        app:layout_constraintTop_toBottomOf="@+id/NomTextView" />
+
+    <ImageView
+        android:id="@+id/iconoVelocitat"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:rotationY="-180"
+        android:src="@drawable/booticon"
+        app:layout_constraintStart_toStartOf="@+id/iconoVida"
+        app:layout_constraintTop_toBottomOf="@+id/iconoVida" />
+
+    <ImageView
+        android:id="@+id/iconoPreu"
+        android:layout_width="58dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="1dp"
+        android:src="@drawable/coinicon"
+        app:layout_constraintBottom_toTopOf="@+id/Imatge"
+        app:layout_constraintEnd_toStartOf="@+id/PreuTextView" />
+
+    <ImageView
+        android:id="@+id/iconoVida"
+        android:layout_width="61dp"
+        android:layout_height="52dp"
+        android:src="@drawable/hearticon"
+        app:layout_constraintStart_toStartOf="@+id/iconoEspasa"
+        app:layout_constraintTop_toBottomOf="@+id/iconoEspasa" />
+
+    <ImageView
+        android:id="@+id/iconoEscut"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="25dp"
+        android:src="@drawable/shieldicon"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="65dp" />
+
+    <ImageView
+        android:id="@+id/iconoEspasa"
+        android:layout_width="67dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="25dp"
+        android:rotationY="-180"
+        android:src="@drawable/swordicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconoEscut" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
